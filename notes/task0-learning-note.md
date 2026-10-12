@@ -2,25 +2,27 @@
 
 ## 学习心得
 
-刚开始学 Agent 时，我容易把它想成“接上大模型、能回答问题的程序”。看完 Chapter 1，再自己跑了一遍示例后，我觉得关键差别在于它不只是回答一句话，而是会根据任务继续决定下一步：需要信息时调用工具，拿到结果后再判断，然后决定继续还是结束。ReAct 里的“思考、行动、观察”把这个过程串起来；Harness 则负责检查模型提出的工具调用，并把结果放回过程记录里。
+一开始我觉得 Agent 大概就是“接了大模型、能回答问题的程序”。这次先看离线演示、再真正用 Kimi 跑联网搜索后，我才比较清楚地看到它们的区别。离线版是把一条现成轨迹放给我看；联网版里，Kimi 收到问题后会自己决定要不要查、查什么，再根据工具返回继续回答。
 
-这次我先把官方仓库的环境配好，再运行了 web-search-agent 的 offline-demo。看到轨迹里有模型决策、工具调用和工具返回，整个流程一下子比只看概念清楚了。后来拿到 Kimi API 后，我又按 README 跑了真正的联网模式，确认模型确实通过 Moonshot 的 web_search 查资料，再根据返回内容回答。两次跑出来的东西不一样：离线演示是预先写好的轨迹，联网模式才是真正发起模型请求和搜索。所以我现在会把“程序跑通”和“真实模型、真实工具已经接通”分开记录。对我来说，Agent 不是模型单独完成所有事，而是模型、上下文、工具和负责执行流程的程序一起配合；工具结果能不能正确进入下一轮，也会影响最后的回答。
+我这次问的是 Kimi API 的 Context Caching。运行时一共走了 3 轮决策，实际调用了 6 次 web_search，最后才生成答案。看这条轨迹时，我注意到工具结果不是“查完就结束”，而是会回到模型那里，模型再决定下一步。这让我对 ReAct 的“想、做、看”有了更具体的印象：LLM 负责判断，工具负责查信息，Harness 把调用和结果接起来。也因此，离线演示跑通只能说明我看懂了流程；确认 API 请求成功、并且轨迹里出现真实工具调用，才算验证了联网实验。
 
 ## 实验记录
 
 - 环境：官方仓库 .venv，Python 3.13.13
-- 离线实验：web-search-agent 的 offline-demo，输出示例 ReAct 轨迹并生成 demo.json
-- 联网实验：Moonshot provider，kimi-k3；3 轮决策中实际调用 web_search 6 次，最后生成回答
-- 联网问题：搜索月之暗面官方资料，了解 Kimi API 的 Context Caching
-- 结果文件：联网运行轨迹保存在本机 /tmp/task0-kimi-web-search.json，没有上传到仓库
-- 复现前请按官方 README 在本机设置 MOONSHOT_API_KEY；不要把真实 Key 写进笔记、截图或 GitHub
+- 离线实验：web-search-agent 的 offline-demo，输出预设 ReAct 轨迹并生成 demo.json
+- 联网实验：Moonshot provider，kimi-k3；3 轮决策、6 次 web_search 调用，成功生成回答
+- 提问：搜索月之暗面官方资料，了解 Kimi API 的 Context Caching
+- 结果 JSON：保存在本机 /tmp/task0-kimi-web-search.json，没有上传到公开仓库
+- 复现命令：在 chapter1/web-search-agent 目录中，先按官方 README 在本机设置 MOONSHOT_API_KEY，再运行：
+
+    ../../.venv/bin/python main.py "请搜索月之暗面官方资料，简要说明 Kimi API 的上下文缓存（Context Caching）是什么，并根据搜索结果回答。" --provider kimi --model kimi-k3 --max-steps 3 --output /tmp/task0-kimi-web-search.json
 
 ## 环境运行截图
 
 ![Task 0 官方离线演示运行截图](../%E6%88%AA%E5%B1%8F2026-10-12%2014.43.35.png)
 
-这张截图是 offline-demo 的预设轨迹，不是上面那次真实联网运行的截图。联网运行的文字记录和工具调用次数见上方实验记录。
+这张图是 offline-demo 的预设轨迹，不是联网运行截图。真实联网运行已在上面的记录中注明；截图没有展示 API Key，也没有把密钥提交到 GitHub。
 
 ## 对本次课程内容的反馈
 
-通过实际看 ReAct 轨迹，比单看概念更容易理解 Agent 怎么调用工具；希望后续实验也能清楚标出哪些是真实模型结果、哪些是离线示例。
+先看离线轨迹、再跑真实联网搜索，这个顺序对我挺有帮助；希望 README 能继续把示例轨迹和真实 API 结果标得醒目一些，也提醒大家别把 Key 截进公开截图。
