@@ -110,7 +110,11 @@ Excel、浏览器/桌面/手机控制、日历、邮件、Webhook 和 PR 等扩�
 
 ## 实验截图
 
-下面两张是读取本次已保存 JSON 结果后，在浏览器中展示的结果页截图，不是运行当时的终端截图，也没有为截图重新请求 API。
+这是我在终端运行结果回放脚本的截图，能看到 MCP 连接、14 项本地检查和 2 项 Kimi 审查的结果。回放读取之前保存的实验记录，没有重新请求 API。
+
+![Task 3 终端运行结果：本地 14/14、在线审查 2/2](images/task3/execution-terminal-replay.png)
+
+下面两张是同一批已保存 JSON 结果的浏览器展示页截图，也没有为截图重新请求 API。
 
 ![MCP 本地检查结果：14 项通过](images/task3/execution-offline-results.jpg)
 
