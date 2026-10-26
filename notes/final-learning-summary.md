@@ -20,7 +20,7 @@ Task 5 的四章翻译示例让我第一次直观看到多 Agent 的好处和代
 
 ## 本次记录
 
-- [Task 0：Agent 基础与环境准备](task0-learning-note.md)
+- [Task 0：Agent 基础与环境准备](task0-agent-basics.md)
 - [Task 1：上下文工程](task1-context-engineering.md)
 - [Task 2：用户记忆和知识库](task2-memory-rag.md)
 - [Task 3：Tools 与 MCP](task3-tools-mcp.md)

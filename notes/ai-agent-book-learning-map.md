@@ -62,6 +62,6 @@ flowchart TD
 
 ## 已完成的个人记录
 
-[Task 0](task0-learning-note.md) · [Task 1](task1-context-engineering.md) · [Task 2](task2-memory-rag.md) · [Task 3](task3-tools-mcp.md) · [Task 4](task4-coding-agent.md) · [Task 5](task5-multi-agent.md) · [第 6 章](chapter6-interaction.md) · [第 7 章](chapter7-evaluation.md) · [第 8 章](chapter8-post-training.md) · [第 9 章](chapter9-evolution.md) · [文字版共学总结](final-learning-summary.md)
+[Task 0](task0-agent-basics.md) · [Task 1](task1-context-engineering.md) · [Task 2](task2-memory-rag.md) · [Task 3](task3-tools-mcp.md) · [Task 4](task4-coding-agent.md) · [Task 5](task5-multi-agent.md) · [第 6 章](chapter6-interaction.md) · [第 7 章](chapter7-evaluation.md) · [第 8 章](chapter8-post-training.md) · [第 9 章](chapter9-evolution.md) · [文字版共学总结](final-learning-summary.md)
 
 参考：[官方仓库章节总览](https://github.com/bojieli/ai-agent-book#-内容速览第-110-章)、[官方学习建议](https://github.com/bojieli/ai-agent-book/blob/main/docs/zh-CN/LEARNING.md)。
