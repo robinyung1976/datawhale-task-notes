@@ -1,6 +1,6 @@
 # Datawhale 课程学习笔记
 
-Task 0–5 是共学打卡；Chapter 6–9 是教材拓展实验，不另算官方打卡任务。每篇笔记含实验记录、学习心得、简短课程反馈和运行截图。
+Task 0–5 是共学打卡；Chapter 6–9 是教材拓展实验；Chapter 10 对应 Task 5 的多 Agent 实验，不另算一次实验。每篇笔记含实验记录、学习心得、简短课程反馈和运行截图。
 
 | 类别 | 笔记 |
 | --- | --- |
@@ -14,5 +14,6 @@ Task 0–5 是共学打卡；Chapter 6–9 是教材拓展实验，不另算官�
 | Chapter 7 | [Agent 成本评估](notes/chapter7-evaluation.md) |
 | Chapter 8 | [过早结束与 DPO 偏好数据](notes/chapter8-post-training.md) |
 | Chapter 9 | [从轨迹里找改进点](notes/chapter9-evolution.md) |
+| Chapter 10 | [多 Agent 协作](notes/chapter10-multi-agent.md)（与 Task 5 同一次实验） |
 
 [19 天共学总结](notes/final-learning-summary.md) · [ai-agent-book 学习路线与知识地图](notes/ai-agent-book-learning-map.md)
