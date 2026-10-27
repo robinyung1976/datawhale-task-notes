@@ -1,6 +1,6 @@
 # Datawhale 课程学习笔记
 
-Task 0–5 是共学打卡；Chapter 6–9 是教材拓展实验；Chapter 10 对应 Task 5 的多 Agent 实验，不另算一次实验。每篇笔记含实验记录、学习心得、简短课程反馈和运行截图。
+Task 0–5 是共学打卡，Task 6–9 是教材第 6–9 章的个人拓展记录；第 10 章内容已在 Task 5 中，不重复立篇。各篇笔记保留实际实验范围、学习心得、课程反馈和截图。
 
 | 类别 | 笔记 |
 | --- | --- |
@@ -10,10 +10,9 @@ Task 0–5 是共学打卡；Chapter 6–9 是教材拓展实验；Chapter 10 �
 | Task 3 | [Tools 与 MCP](notes/task3-tools-mcp.md) |
 | Task 4 | [Coding Agent 与通用 Agent](notes/task4-coding-agent.md) |
 | Task 5 | [多 Agent 协作](notes/task5-multi-agent.md) |
-| Chapter 6 | [交互与异步 Agent](notes/chapter6-interaction.md) |
-| Chapter 7 | [Agent 成本评估](notes/chapter7-evaluation.md) |
-| Chapter 8 | [过早结束与 DPO 偏好数据](notes/chapter8-post-training.md) |
-| Chapter 9 | [从轨迹里找改进点](notes/chapter9-evolution.md) |
-| Chapter 10 | [多 Agent 协作](notes/chapter10-multi-agent.md)（与 Task 5 同一次实验） |
+| Task 6 | [交互与异步 Agent](notes/task6-interaction.md) |
+| Task 7 | [Agent 成本评估](notes/task7-evaluation.md) |
+| Task 8 | [过早结束与 DPO 偏好数据](notes/task8-post-training.md) |
+| Task 9 | [从轨迹里找改进点](notes/task9-evolution.md) |
 
 [19 天共学总结](notes/final-learning-summary.md) · [ai-agent-book 学习路线与知识地图](notes/ai-agent-book-learning-map.md)

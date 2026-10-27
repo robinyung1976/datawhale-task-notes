@@ -35,11 +35,11 @@ flowchart TD
 | [3 记忆与知识库](https://github.com/bojieli/ai-agent-book/tree/main/chapter3) | 用户偏好怎样跨会话更新，资料怎样被检索？ | 短期/长期记忆、RAG、BM25、Embedding | ✅ Task 2：记忆更新与 BM25 检索 |
 | [4 工具](https://github.com/bojieli/ai-agent-book/tree/main/chapter4) | Agent 如何安全地看、写和调用外部能力？ | 五类工具、参数契约、权限、MCP | ✅ Task 3：执行工具 MCP Server |
 | [5 Coding Agent](https://github.com/bojieli/ai-agent-book/tree/main/chapter5) | 代码生成之后怎样执行、观察并纠错？ | Read → Think → Edit → Execute → Observe | ✅ Task 4：代码辅助数学题的部分循环 |
-| [6 交互扩展](https://github.com/bojieli/ai-agent-book/tree/main/chapter6) | 事件、语音、浏览器和机器人怎样扩展观察与动作？ | 异步、事件、Computer Use、多模态 | ✅ 实验 6-2：离线三场景与真实 Kimi 单场景；见[笔记](chapter6-interaction.md) |
-| [7 Agent 评估](https://github.com/bojieli/ai-agent-book/tree/main/chapter7) | “更好”有没有证据，失败最早发生在哪一步？ | 环境、验证器、成功率、成本、统计 | ✅ 实验 7-9：保存轨迹的离线成本复算；见[笔记](chapter7-evaluation.md) |
-| [8 模型后训练](https://github.com/bojieli/ai-agent-book/tree/main/chapter8) | 什么时候需要把能力写进模型参数？ | 数据、SFT、偏好训练、RL、留出评估 | ✅ 实验 8-17 的离线教学演示与 21 项测试；未训练模型；见[笔记](chapter8-post-training.md) |
-| [9 持续进化](https://github.com/bojieli/ai-agent-book/tree/main/chapter9) | 从失败轨迹里总结的改进怎样安全发布？ | 轨迹、规则、Skill、回归、回滚 | ✅ 实验 9-1：启发式三层验证与 3 项测试；见[笔记](chapter9-evolution.md) |
-| [10 多 Agent](https://github.com/bojieli/ai-agent-book/tree/main/chapter10) | 什么任务值得分角色，怎样交接上下文？ | Manager、共享文件、隔离、协作成本 | ✅ Task 5：四章翻译教学示例与单 Agent 对照；见[第 10 章笔记](chapter10-multi-agent.md) |
+| [6 交互扩展](https://github.com/bojieli/ai-agent-book/tree/main/chapter6) | 事件、语音、浏览器和机器人怎样扩展观察与动作？ | 异步、事件、Computer Use、多模态 | ✅ 实验 6-2：离线三场景与真实 Kimi 单场景；见[笔记](task6-interaction.md) |
+| [7 Agent 评估](https://github.com/bojieli/ai-agent-book/tree/main/chapter7) | “更好”有没有证据，失败最早发生在哪一步？ | 环境、验证器、成功率、成本、统计 | ✅ 实验 7-9：保存轨迹的离线成本复算；见[笔记](task7-evaluation.md) |
+| [8 模型后训练](https://github.com/bojieli/ai-agent-book/tree/main/chapter8) | 什么时候需要把能力写进模型参数？ | 数据、SFT、偏好训练、RL、留出评估 | ✅ 实验 8-17 的离线教学演示与 21 项测试；未训练模型；见[笔记](task8-post-training.md) |
+| [9 持续进化](https://github.com/bojieli/ai-agent-book/tree/main/chapter9) | 从失败轨迹里总结的改进怎样安全发布？ | 轨迹、规则、Skill、回归、回滚 | ✅ 实验 9-1：启发式三层验证与 3 项测试；见[笔记](task9-evolution.md) |
+| [10 多 Agent](https://github.com/bojieli/ai-agent-book/tree/main/chapter10) | 什么任务值得分角色，怎样交接上下文？ | Manager、共享文件、隔离、协作成本 | ✅ Task 5：四章翻译教学示例与单 Agent 对照；见[Task 5 笔记](task5-multi-agent.md) |
 
 “✅”只表示我跑过表中写明的**具体范围**。例如 Task 4 是 11 道教学题，不是教材的 30 题正式验收；Task 5 是四章样例，不是整书正式评测。第 6 章的离线并发加速不能替代真实模型的回复耗时，第 7 章是假设价格下的复算，第 8 章没有训练，第 9 章没有运行真实 LLM 裁判。
 
@@ -62,6 +62,6 @@ flowchart TD
 
 ## 已完成的个人记录
 
-[Task 0](task0-agent-basics.md) · [Task 1](task1-context-engineering.md) · [Task 2](task2-memory-rag.md) · [Task 3](task3-tools-mcp.md) · [Task 4](task4-coding-agent.md) · [Task 5](task5-multi-agent.md) · [第 6 章](chapter6-interaction.md) · [第 7 章](chapter7-evaluation.md) · [第 8 章](chapter8-post-training.md) · [第 9 章](chapter9-evolution.md) · [第 10 章](chapter10-multi-agent.md) · [文字版共学总结](final-learning-summary.md)
+[Task 0](task0-agent-basics.md) · [Task 1](task1-context-engineering.md) · [Task 2](task2-memory-rag.md) · [Task 3](task3-tools-mcp.md) · [Task 4](task4-coding-agent.md) · [Task 5](task5-multi-agent.md) · [Task 6](task6-interaction.md) · [Task 7](task7-evaluation.md) · [Task 8](task8-post-training.md) · [Task 9](task9-evolution.md) · [文字版共学总结](final-learning-summary.md)
 
 参考：[官方仓库章节总览](https://github.com/bojieli/ai-agent-book#-内容速览第-110-章)、[官方学习建议](https://github.com/bojieli/ai-agent-book/blob/main/docs/zh-CN/LEARNING.md)。
